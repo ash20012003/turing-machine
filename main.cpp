@@ -18,11 +18,13 @@ int main(int argc, char* argv[]) {
     string tape_o = "";
     int option;
 
+    inputFile >> temporary;
+    s_option << temporary;
+    s_option >> option;
+    
     while (inputFile >> temporary) {
         tape_i += temporary;
     }
-    s_option << tape_i[1];
-    s_option >> option;
 
     switch (option) {
     case 0: {
@@ -31,7 +33,7 @@ int main(int argc, char* argv[]) {
     }
     case 1: {
         // binary to unary
-        test();
+        binary_to_unary(tape_i, tape_o);
     }
     case 2: {
         // binary to decimal
