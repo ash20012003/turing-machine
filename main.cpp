@@ -29,11 +29,16 @@ int main(int argc, char* argv[]) {
     switch (option) {
     case 0: {
         // unary to binary
+        unary_to_binary(tape_i,tape_o);
 
     }
     case 1: {
         // binary to unary
+<<<<<<< HEAD
         binary_to_unary(tape_i, tape_o);
+=======
+        
+>>>>>>> 8ccd8ff (unary to binary completed)
     }
     case 2: {
         // binary to decimal
