@@ -41,10 +41,11 @@ int main(int argc, char* argv[]) {
     }
     case 2: {
         // binary to decimal
+        binary_to_decimal(tape_i, tape_o);
     }
     case 3: {
         // decimal to binary
-        decimal_to_binary(tape_i, tape_o);
+        //decimal_to_binary(tape_i, tape_o);
         break;
     }
     case 4: {
@@ -53,7 +54,7 @@ int main(int argc, char* argv[]) {
     }
     case 5: {
         // hexa to decimal
-        hexa_to_decimal(tape_i, tape_o);
+        //hexa_to_decimal(tape_i, tape_o);
         break;
     }
     }
