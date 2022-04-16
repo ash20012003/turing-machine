@@ -3,6 +3,8 @@
 #include <sstream>  
 
 #include "MODULES/BINARY_TO_UNARY.h"
+#include "MODULES/DECIMAL_TO_BINARY.h"
+#include "MODULES/HEXA_TO_DECIMAL.h"
 
 using namespace std;
 
@@ -30,21 +32,29 @@ int main(int argc, char* argv[]) {
     case 0: {
         // unary to binary
         unary_to_binary(tape_i,tape_o);
-
+        break;
     }
     case 1: {
         // binary to unary
-<<<<<<< HEAD
         binary_to_unary(tape_i, tape_o);
-=======
-        
->>>>>>> 8ccd8ff (unary to binary completed)
+        break;
     }
     case 2: {
         // binary to decimal
     }
     case 3: {
         // decimal to binary
+        decimal_to_binary(tape_i, tape_o);
+        break;
+    }
+    case 4: {
+        // decimal to hexa
+        break;
+    }
+    case 5: {
+        // hexa to decimal
+        hexa_to_decimal(tape_i, tape_o);
+        break;
     }
     }
 }
