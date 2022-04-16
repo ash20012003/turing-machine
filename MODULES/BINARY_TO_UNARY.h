@@ -94,5 +94,5 @@ void unary_to_binary(string input, string& output) {
             i += 1;
         }
     }
-    cout << output << flag << endl;
+    cout <<"BINARY : "<<output<< endl;
 }
